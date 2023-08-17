@@ -1,22 +1,20 @@
 #include<iostream>
-#include<string.h>
+#include<string>
 using namespace std;
 class mother{
 	public:
 	string message;
-	void setmessage(){
-		cout<<"Enter Message: ";
-		cin>>message;
+	void display(){
+		cout<<"Enter Message";
 	}
 };
 class daughter:public mother{
 	public:
 		void display(){
-			cout<<"Message :"<<message;
+			cout<<"Message by daughter";
 		}
 };
 main(){
 	daughter d;
-	d.setmessage();
 	d.display();
 }
